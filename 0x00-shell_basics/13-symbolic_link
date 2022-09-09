@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "il -s /bin/ls __ls__"
