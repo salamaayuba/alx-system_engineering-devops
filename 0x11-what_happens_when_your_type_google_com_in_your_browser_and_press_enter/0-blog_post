@@ -1,0 +1,20 @@
+What happens when you type https://www.google.com in your browser and press Enter?
+When you type https://www.google.com in your browser and press enter, you are initiating a complex process that involves multiple systems working together to deliver the web page to your screen. In this blog post, we'll dive into each step of the process to help you understand what's happening behind the scenes.
+DNS request:
+The first step is to make a DNS request. DNS stands for Domain Name System, and it's what translates the human-readable domain name "www.google.com" into an IP address that can be understood by machines. Your browser sends a request to a DNS server asking for the IP address of the domain name, and the DNS server responds with the IP address that the domain name is associated with.
+TCP/IP:
+With the IP address in hand, your browser initiates a TCP (Transmission Control Protocol) connection with the web server at the IP address. TCP is a set of rules that govern how data is exchanged over the internet, and it's responsible for ensuring that data is delivered reliably and in the correct order.
+Firewall:
+Once the TCP connection is established, the request passes through a firewall. The firewall is a security system that examines incoming traffic and blocks any traffic that appears suspicious or unauthorized.
+HTTPS/SSL:
+After the firewall, the request is sent using HTTPS (Hypertext Transfer Protocol Secure), which is a secure version of the standard HTTP protocol used to communicate with web servers. HTTPS uses SSL (Secure Socket Layer) or TLS (Transport Layer Security) to encrypt the data being sent between the browser and the web server. This encryption ensures that any data exchanged between the two systems cannot be intercepted by anyone else.
+Load-balancer:
+The request then passes through a load balancer, which is responsible for distributing incoming requests across multiple servers to ensure optimal performance and prevent overloading. Load balancing helps maintain high availability and reliability of the website.
+Web server:
+Once the request reaches the web server, the server processes the request and sends a response back to the browser. The web server retrieves the requested web page from its storage location and sends it back to the browser over the established TCP connection. The web server is responsible for executing any scripts on the page and performing any other processing tasks necessary to deliver the content to the browser.
+Application server:
+In some cases, the web server may pass the request to an application server if the requested content requires additional processing, such as running a database query or executing custom business logic. The application server performs the required processing and sends the result back to the web server, which then sends it to the browser.
+Database:
+If the requested content is stored in a database, the web server or application server sends a query to the database to retrieve the data. The database returns the requested data to the server, which then sends it back to the browser.
+In conclusion, when you type https://www.google.com in your browser and press enter, you're triggering a complex process that involves multiple systems working together to deliver the requested web page to your screen. Understanding how these systems work together is crucial for anyone working in web development or IT, and it's an essential part of creating secure and reliable web applications.
+
